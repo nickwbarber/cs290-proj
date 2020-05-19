@@ -1,25 +1,27 @@
-// imports
+// local imports
 const log = require('./log').log;
-log('./log loaded successfully');
+const pages = require('./pages');
+
+// other imports
 const express = require('express');
-log('express loaded successfully');
-const handlebars = require('express-handlebars').create({defaultLayout: 'main'});
-log('express-handlebars loaded successfully');
-const bodyParser = require('body-parser');
-log('body-parser loaded successfully');
+const app = express();
+const path = require('path');
+const hbs = require('hbs');
 
 
 // setup app
-const app = express();
-app.engine('handlebars', handlebars.engine);
-app.set('view engine', 'handlebars');
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
 app.set('port', 3888);
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
 
-// HANDLERS MUST GO HERE
-// will be imported from impor
+// PATH HANDLERS MUST GO HERE
+app.get('/', pages.home);            // splash
+app.get('/about', pages.about);      // about us
+app.get('/work', pages.work);        // work examples
+app.get('/contact', pages.contact);  // contact form
 
 
 // default handler
