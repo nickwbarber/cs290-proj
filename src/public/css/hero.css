@@ -1,0 +1,13 @@
+.hero-container {
+    background-image: url(../../images/hero.png);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 3.5s;
+}
+
+.hero-container.active {
+    opacity: 1;
+}

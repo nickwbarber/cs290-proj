@@ -1,5 +1,16 @@
 {{#> layouts/base title="About Page"}}
+    {{#*inline "head-block"}}
+        <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    {{/inline}}
+
     {{#*inline "main-block"}}
-        <span>this is the about page</span>
+
+        {{#> includes/navbar}}
+        {{/includes/navbar}}
+
+    {{/inline}}
+
+    {{#*inline "scripts-block"}}
+        <script src="scripts/about.js"></script>
     {{/inline}}
 {{/layouts/base}}

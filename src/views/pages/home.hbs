@@ -1,5 +1,20 @@
 {{#> layouts/base title="Home Page"}}
+    {{#*inline "head-block"}}
+        <link rel="stylesheet" type="text/css" href="css/hero.css"/>
+        <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    {{/inline}}
+
     {{#*inline "main-block"}}
-        <span>this is the home page</span>
+
+        {{#> includes/navbar}}
+        {{/includes/navbar}}
+
+        {{#> includes/hero}}
+        {{/includes/hero}}
+
+    {{/inline}}
+
+    {{#*inline "scripts-block"}}
+        <script src="scripts/home.js"></script>
     {{/inline}}
 {{/layouts/base}}

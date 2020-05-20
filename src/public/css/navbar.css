@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    background-color: grey;
+    color: black;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navbar-title {
+    display: block;
+    color: white;
+    margin: 2em;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: grey;
+    transition: background-color 100ms;
+}
+
+.navbar-links li :hover {
+    background-color: lightgrey;
+}
