@@ -1,4 +1,7 @@
 .navbar {
+    margin: 0;
+    padding: 0;
+    border: 0;
     display: flex;
     background-color: grey;
     color: black;
@@ -7,9 +10,9 @@
 }
 
 .navbar-title {
-    display: block;
+    display: flex;
     color: white;
-    margin: 2em;
+    vertical-align: middle;
 }
 
 .navbar-links ul {
@@ -20,6 +23,8 @@
 
 .navbar-links li {
     margin: 0;
+    background-color: grey;
+    opacity: 100;
 }
 
 .navbar-links a {
@@ -31,9 +36,10 @@
     padding-right: 1em;
     padding-left: 1em;
     background-color: grey;
-    transition: background-color 100ms;
+    transition: background-color 500ms;
 }
 
-.navbar-links li :hover {
-    background-color: lightgrey;
+.navbar-links li :hover,
+.navbar-links li :focus {
+    background-color: #727272;
 }

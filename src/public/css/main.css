@@ -1,4 +1,8 @@
 body {
-    background: white;
     margin: 0;
+    padding: 0;
+    border: 0;
+    background: white;
+    overflow: hidden;
+    /*scrollbar-color: #2a2c2e #1c1e1f;*/
 }

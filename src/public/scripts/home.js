@@ -1,5 +1,11 @@
-const heroContainer = document.getElementsByClassName('hero-container')[0];
-heroContainer.classList.toggle('active');
+window.addEventListener('load', () => {
+    //const heroContainer = document.querySelector('.hero-container');
+    //heroContainer.classList.toggle('active');
 
-const homeLink = document.getElementsByClassName('home-link')[0];
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('preloader-end');
+});
+
+const homeLink = document.querySelector('.home-link');
 homeLink.setAttribute('href', '#');
+
