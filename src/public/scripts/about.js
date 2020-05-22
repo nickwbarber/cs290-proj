@@ -1,2 +1,3 @@
-const homeLink = document.getElementsByClassName('about-link')[0];
-homeLink.setAttribute('href', '#');
+import * as common from "./common.js";
+
+common.disableLinksToCurrentPage('.about-link');

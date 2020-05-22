@@ -1,8 +1,13 @@
+:root {
+    --plain-background: black;
+    --fancy-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%, rgba(133,133,133,1) 100%); 
+}
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
-    background: white;
-    overflow: hidden;
-    /*scrollbar-color: #2a2c2e #1c1e1f;*/
+    background: var(--plain-background);
+    scrollbar-color: #1c1e1f #2a2c2e;
+    color: lightgrey;
 }

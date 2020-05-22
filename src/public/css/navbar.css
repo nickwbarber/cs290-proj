@@ -2,44 +2,47 @@
     margin: 0;
     padding: 0;
     border: 0;
+    width: 100vw;
     display: flex;
-    background-color: grey;
-    color: black;
+    box-sizing: border-box;
+    position: sticky;
+    overflow: auto;
+    top: 0;
+    z-index: 1;
+    align-items: center;
     justify-content: space-between;
     align-content: center;
+    background-color: rgba(100, 100, 100, 0.6);
+    backdrop-filter: blur(10px);
 }
 
 .navbar-title {
-    display: flex;
+    display: block;
     color: white;
-    vertical-align: middle;
+    padding: 0 1em;
 }
 
 .navbar-links ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
-    margin: 0;
-}
-
-.navbar-links li {
-    margin: 0;
-    background-color: grey;
-    opacity: 100;
+    align-items: center;
 }
 
 .navbar-links a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
-    display: block;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    height: 2em;
     padding-right: 1em;
     padding-left: 1em;
-    background-color: grey;
-    transition: background-color 500ms;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 300ms;
 }
 
 .navbar-links li :hover,
 .navbar-links li :focus {
-    background-color: #727272;
+    background-color: rgba(255, 255, 255, 0.3);
 }

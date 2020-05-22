@@ -1,23 +1,53 @@
 {{#> layouts/base title="Home Page"}}
     {{#*inline "head-block"}}
-        <link rel="stylesheet" type="text/css" href="css/hero.css"/>
-        <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
         <link rel="stylesheet" type="text/css" href="css/preload.css"/>
+        <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="css/hero.css"/>
     {{/inline}}
 
     {{#*inline "main-block"}}
 
-        {{#> includes/navbar}}
-        {{/includes/navbar}}
+        <header>
+            {{#> includes/navbar}}
+            {{/includes/navbar}}
+        </header>
 
-        {{#> includes/hero}}
-        {{/includes/hero}}
+        <main>
+            <div class="hero-container">
+                <div class="caption">images from Impact (<a href="http://behance.com/mindofimpact">behance.net/mindofimpact</a>)</div>
+                <button class="prev-btn">prev</button>
+                <button class="next-btn">next</button>
+                <div class="hero-slider">
+                    <img class="image-5" src="images/image5.png"/>
+                    <img class="image-1" src="images/image1.jpg"/>
+                    <img class="image-2" src="images/image2.png"/>
+                    <img class="image-3" src="images/image3.png"/>
+                    <img class="image-4" src="images/image4.jpg"/>
+                    <img class="image-5" src="images/image5.png"/>
+                    <img class="image-6" src="images/image1.jpg"/>
+                </div
+            </div>
 
-        <div class="preloader"></div>
+            <div class="preloader">
+                <!-- TODO -->
+                <!--
+                <div class="preloader-text">
+                    <span>W</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>c</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>e</span>
+                    <span>!</span>
+                </div>
+                -->
+            </div>
+        </main>
 
     {{/inline}}
 
     {{#*inline "scripts-block"}}
-        <script src="scripts/home.js"></script>
+        <script src="scripts/home.js" type="module"></script>
     {{/inline}}
 {{/layouts/base}}

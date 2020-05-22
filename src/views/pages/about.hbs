@@ -1,16 +1,109 @@
 {{#> layouts/base title="About Page"}}
     {{#*inline "head-block"}}
         <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="css/about.css"/>
     {{/inline}}
 
     {{#*inline "main-block"}}
 
-        {{#> includes/navbar}}
-        {{/includes/navbar}}
+        <header>
+            {{#> includes/navbar}}
+            {{/includes/navbar}}
+        </header>
+
+
+        <main>
+            <div class="content-container">
+                <div class="col-1">
+                    <h1>About Us</h1>
+                </div>
+                <div class="non-header-container">
+                    <div class="col-2">
+                        <div class="intro">
+                            <h2>
+                                the intro
+                            </h2>
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                </li>
+                                <li>
+                                    Aliquam vel odio at urna accumsan auctor et
+                                    sed libero.
+                                </li>
+                                <li>
+                                    Vivamus eget quam vel lorem semper ultrices
+                                    vel vitae ligula.
+                                </li>
+                                <li>
+                                    Nam mollis massa quis ultrices hendrerit.
+                                </li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="../../images/image1.jpg">
+                                <div class="caption">
+                                    image from Impact (<a href="http://behance.com/mindofimpact">behance.net/mindofimpact</a>)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="story">
+                            <h2>
+                                the story
+                            </h2>
+                            <div class="story-content">
+                                <p>
+                                     Aenean imperdiet vulputate lobortis.
+                                     Nullam eget vehicula elit. Suspendisse id
+                                     ante id nulla euismod sagittis. Vestibulum
+                                     vitae cursus tellus. Suspendisse in
+                                     eleifend diam. Quisque vestibulum molestie
+                                     augue. Morbi laoreet vestibulum dignissim.
+                                     Etiam scelerisque pretium nisi, sed
+                                     euismod nisi dignissim vitae. Phasellus
+                                     vitae aliquet velit. Praesent quis neque
+                                     purus.
+                                </p>
+                                <p>
+                                     Cras semper sit amet mi sit amet egestas.
+                                     Vivamus pharetra malesuada dui, vitae
+                                     consectetur metus convallis quis. Nulla
+                                     gravida purus aliquet, semper turpis sit
+                                     amet, cursus urna. Class aptent taciti
+                                     sociosqu ad litora torquent per conubia
+                                     nostra, per inceptos himenaeos. Quisque
+                                     varius dolor eu risus fermentum accumsan.
+                                     Aenean gravida, enim ut volutpat luctus,
+                                     elit magna hendrerit justo, at placerat
+                                     lacus mi non dolor. Curabitur enim neque,
+                                     blandit a viverra et, lobortis a eros.
+                                     Nullam tempor est nec tortor consectetur
+                                     feugiat. Curabitur condimentum nibh at
+                                     libero porttitor tincidunt. Nunc non mi
+                                     pulvinar, pulvinar urna quis, consequat
+                                     metus. Quisque lobortis, mauris id euismod
+                                     varius, metus arcu vestibulum quam, sit
+                                     amet volutpat risus sapien et nunc. Duis
+                                     sit amet felis vel ipsum facilisis
+                                     interdum in vel tortor. Vestibulum ut
+                                     risus at lectus viverra lacinia in id sem.
+                                     Nulla lacinia sit amet felis finibus
+                                     convallis. Aliquam erat volutpat. Cras ac
+                                     dui et lacus vulputate luctus. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
 
     {{/inline}}
 
     {{#*inline "scripts-block"}}
-        <script src="scripts/about.js"></script>
+        <script src="scripts/about.js" type="module"></script>
     {{/inline}}
 {{/layouts/base}}
