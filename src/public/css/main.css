@@ -1,13 +1,44 @@
 :root {
-    --plain-background: black;
-    --fancy-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%, rgba(133,133,133,1) 100%); 
+    /*--main-bg-color: #24202e;*/
+    --dark-bg-color: linear-gradient(20deg, rgba(36,32,46,1) 0%, rgba(73,50,69,1) 100%); ;
+    --light-bg-color: #e8e6e3;
+    --light-text-color: #e8e6e3;
+    --accent-color: #cc6e00;
+    --dark-text-color: #1d1d1f;
 }
 
-body {
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
     margin: 0;
     padding: 0;
-    border: 0;
-    background: var(--plain-background);
-    scrollbar-color: #1c1e1f #2a2c2e;
-    color: lightgrey;
+    background: var(--dark-bg-color);
+    background-repeat: none;
+    font-family: 'Voces', sans-serif;
+    color: var(--light-text-color);
+    /*scrollbar-color: #1c1e1f #2a2c2e;*/
+    /*scrollbar-color: var(--main-bg-color) #2a2c2e;*/
 }
+
+.accent {
+    color: var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-text-color);
+}
+
+.link-text {
+    display: inline;
+    border-bottom: 2px dotted var(--accent-color);
+    transition: border-bottom 3000ms;
+}
+
+a:hover > .link-text,
+a:focus > .link-text {
+    border-bottom: 2px solid var(--accent-color);
+}
+

@@ -1,28 +1,23 @@
 .navbar {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100vw;
     display: flex;
-    box-sizing: border-box;
-    position: sticky;
-    overflow: auto;
-    top: 0;
-    z-index: 1;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
-    background-color: rgba(100, 100, 100, 0.6);
-    backdrop-filter: blur(10px);
+    font-size: 1rem;
 }
 
-.navbar-title {
+.nav-title {
     display: block;
-    color: white;
     padding: 0 1em;
+    margin-right: auto;
+    font-family: 'Calistoga', serif;
+    font-size: 1.5em;
+    font-weight: regular;
 }
 
-.navbar-links ul {
+.nav-links {
+    padding-right: 2rem;
+    margin-left: auto;
+}
+
+nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -30,19 +25,9 @@
     align-items: center;
 }
 
-.navbar-links a {
-    display: flex;
+nav a {
     align-items: center;
     text-decoration: none;
-    color: white;
     height: 2em;
-    padding-right: 1em;
-    padding-left: 1em;
-    background-color: rgba(255, 255, 255, 0);
-    transition: background-color 300ms;
-}
-
-.navbar-links li :hover,
-.navbar-links li :focus {
-    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1em;
 }

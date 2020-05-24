@@ -1,7 +1,7 @@
 {
-  "name": "final-proj",
+  "name": "fun-proj",
   "version": "1.0.0",
-  "description": "CS290 Final Project",
+  "description": "Fun project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,12 +9,9 @@
   "author": "Nick Barber",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "browser-sync": "^2.26.7",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "hbs": "^4.1.1",
-    "nodemon": "^2.0.4",
-    "rollup": "^2.10.7"
+    "nodemon": "^2.0.4"
   }
 }

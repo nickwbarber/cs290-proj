@@ -1,62 +1,50 @@
-body {
-    background: var(--fancy-background);
+.body-container {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr;
 }
 
-.content-container {
+header {
+    grid-row: 1;
+    width: 100vw;
+    padding: 1em 2em;
+}
+
+main {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    display: grid;
+    /*grid-template-rows: repeat(3, 1fr);*/
+    grid-template-rows: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+}
+
+.intro {
+    grid-row: 1;
+    grid-column: span 3;
+    text-align: center;
+}
+
+.content {
+    grid-row: 3;
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
-    top: 30;
-    height: 100vh;
+    background: var(--light-text-color);
+    color: var(--dark-text-color);
 }
 
-.content-container > * {
-    margin: 0 2rem;
-}
-
-.content-container .non-header-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.content-container .non-header-container > * {
-    margin: 0 3rem;
-}
-
-.content-container .col-1 {
-    min-width: 10rem;
-}
-
-.content-container .col-2 {
-    min-width: 15rem;
-}
-
-.content-container .col-3 {
-    min-width: 20rem;
-    max-width: 20rem;
-}
-
-.content-container .story-content {
-    overflow: auto;
-    height: 20rem;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-container .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.image-container a {
-    color: white;
-    text-decoration: underline;
-}
-
-.content-container .col-2 img {
-    max-width: 20rem;
-    object-fit: cover;
+h1 {
+    display: inline-block;
+    padding: 0 1em;
+    margin: 0;
+    font-family: 'Calistoga', serif;
+    font-size: 3em;
+    font-weight: normal;
 }

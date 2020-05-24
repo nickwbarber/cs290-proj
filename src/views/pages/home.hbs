@@ -1,53 +1,46 @@
 {{#> layouts/base title="Home Page"}}
     {{#*inline "head-block"}}
-        <link rel="stylesheet" type="text/css" href="css/preload.css"/>
-        <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
-        <link rel="stylesheet" type="text/css" href="css/hero.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
     {{/inline}}
 
-    {{#*inline "main-block"}}
+    {{#*inline "body-block"}}
 
+    <div class="body-container">
         <header>
             {{#> includes/navbar}}
             {{/includes/navbar}}
         </header>
 
         <main>
-            <div class="hero-container">
-                <div class="caption">images from Impact (<a href="http://behance.com/mindofimpact">behance.net/mindofimpact</a>)</div>
-                <button class="prev-btn">prev</button>
-                <button class="next-btn">next</button>
-                <div class="hero-slider">
-                    <img class="image-5" src="images/image5.png"/>
-                    <img class="image-1" src="images/image1.jpg"/>
-                    <img class="image-2" src="images/image2.png"/>
-                    <img class="image-3" src="images/image3.png"/>
-                    <img class="image-4" src="images/image4.jpg"/>
-                    <img class="image-5" src="images/image5.png"/>
-                    <img class="image-6" src="images/image1.jpg"/>
-                </div
-            </div>
-
-            <div class="preloader">
-                <!-- TODO -->
-                <!--
-                <div class="preloader-text">
-                    <span>W</span>
-                    <span>e</span>
-                    <span>l</span>
-                    <span>c</span>
-                    <span>o</span>
-                    <span>m</span>
-                    <span>e</span>
-                    <span>!</span>
+            <section class="content">
+                <h1>Groove<span class="accent">.<span></h1>
+                <div class="slider-container">
+                    <div class="slider">
+                        <img class="image" src="images/album-covers/radiohead-in-rainbows-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/boards-of-canada-campfire-headphase-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/massive-attack-mezzanine-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/nicolas-jaar-space-is-only-noise-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/plaid-scintilli-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/sufjan-stevens-age-of-adz-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/radiohead-in-rainbows-1280x1280.jpg"/>
+                        <img class="image" src="images/album-covers/boards-of-canada-campfire-headphase-1280x1280.jpg"/>
+                    </div>
+                    <button class="prev-btn">
+                        <img src="images/svgs/arrow-left.svg">
+                    </button>
+                    <button class="next-btn">
+                        <img src="images/svgs/arrow-right.svg">
+                    </button>
                 </div>
-                -->
-            </div>
+            </section>
+
+            <div class="caption">album art from <a href="https://tidal.com"><span class="link-text">Tidal</span></a></div>
         </main>
+    </div>
 
-    {{/inline}}
+    <script src="scripts/home.js" type="module"></script>
 
-    {{#*inline "scripts-block"}}
-        <script src="scripts/home.js" type="module"></script>
     {{/inline}}
 {{/layouts/base}}
