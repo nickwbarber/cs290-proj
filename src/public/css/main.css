@@ -33,12 +33,12 @@ a {
 
 .link-text {
     display: inline;
-    border-bottom: 2px dotted var(--accent-color);
+    border-bottom: 1px dotted var(--accent-color);
     transition: border-bottom 3000ms;
 }
 
 a:hover > .link-text,
 a:focus > .link-text {
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
 }
 

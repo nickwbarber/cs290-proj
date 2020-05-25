@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // PATH HANDLERS MUST GO HERE
 app.get('/', pages.home);            // splash
 app.get('/about', pages.about);      // about us
-app.get('/work', pages.work);        // work examples
+app.get('/download', pages.download);        // work examples
 app.get('/contact', pages.contact);  // contact form
 
 

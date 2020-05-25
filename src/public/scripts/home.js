@@ -49,7 +49,7 @@ function enableSlider() {
         }
     });
 
-    const repeatNextSlide = setInterval(nextSlide, 3000);  // auto-play
+    const repeatNextSlide = setInterval(nextSlide, 2000);  // auto-play
 
     // activate buttons
     nextBtn.onclick = () => { clearInterval(repeatNextSlide); nextSlide(); };

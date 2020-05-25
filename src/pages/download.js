@@ -3,5 +3,5 @@ module.exports = { main };
 
 function main(req, res) {
     res.status(200);
-    res.render('pages/work');
+    res.render('pages/download');
 }

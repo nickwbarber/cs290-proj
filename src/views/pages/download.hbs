@@ -1,0 +1,55 @@
+{{#> layouts/base title="About Us"}}
+    {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/download.css"/>
+    {{/inline}}
+
+    {{#*inline "body-block"}}
+
+    <div class="body-container">
+        <header>
+            {{#> includes/navbar}}
+            {{/includes/navbar}}
+        </header>
+
+        <main>
+            <section class="intro">
+                <h1>
+                    Warm up the bass<span class="accent">.</span>
+                </h1>
+                <h3>
+                    Download the Groove client for Windows, macOS, or Linux
+                </h3>
+            </section>
+            <ul class="content">
+                <a href="https://upload.wikimedia.org/wikipedia/commons/e/e8/W%C3%A9ris_JPG12.jpg" download="sup">
+                <li class="card">
+                    <h3>Windows<sup>1</sup></h3>
+                </li>
+                </a>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/d/de/Holding_McIntosh_apple_-_panoramio.jpg" download="sup">
+                <li class="card">
+                    <h3>macOS<sup>2</sup></h3>
+                </li>
+                </a>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg" download="sup">
+                <li class="card">
+                    <h3>Linux<sup>3</sup></h3>
+                </li>
+                </a>
+            </ul>
+        </main>
+
+        <footer>
+            <ul>
+                <li>1: Image by Jean-Pol Grandmont. <a href="https://creativecommons.org/licenses/by/2.0/deed.en"><span class="link-text">CC BY 2.0</span></a></li>
+                <li>2: Image by Jiaqian AirplaneFan. <a href="https://creativecommons.org/licenses/by/3.0/deed.en"><span class="link-text">CC BY 3.0</span></a></li>
+                <li>3: Image by Andrew Shiva. <a href="https://creativecommons.org/licenses/by-sa/4.0"><span class="link-text">CC BY-SA 4.0</span></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="scripts/download.js" type="module"></script>
+
+    {{/inline}}
+{{/layouts/base}}
