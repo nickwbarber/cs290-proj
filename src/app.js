@@ -7,21 +7,26 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const hbs = require('hbs');
+const bodyParser = require('body-parser');
 
 
 // setup app
 hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.set('port', 3888);
+app.set('port', 3000);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 
-// PATH HANDLERS MUST GO HERE
-app.get('/', pages.home);            // splash
-app.get('/about', pages.about);      // about us
-app.get('/download', pages.download);        // work examples
-app.get('/contact', pages.contact);  // contact form
+// path handlers
+app.get('/', pages.home);
+app.get('/about', pages.about);
+app.get('/download', pages.download);
+app.get('/recommend', pages.recommend);
+app.get('/success', pages.recommendSuccess);
+app.post('/recommend/submit', pages.recommendSubmit);
 
 
 // default handler

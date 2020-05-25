@@ -1,0 +1,36 @@
+{{#> layouts/base title="Recommend something!"}}
+    {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/recommend.css"/>
+    {{/inline}}
+
+    {{#*inline "body-block"}}
+
+    <div class="body-container">
+        <header>
+            {{#> includes/navbar}}
+            {{/includes/navbar}}
+        </header>
+
+        <main>
+            <section class="intro">
+                <h1>
+                    Music recommendations, please<span class="accent">.</span>
+                </h1>
+            </section>
+            <form class="message-form" action="/recommend/submit" method="POST">
+                <label for="message">Your recommendation:</label>
+                <input class="textarea" type="text" name="message" placeholder="e.g. Veckatimest - Grizzly Bear">
+                <br/>
+                <input class="btn" type="submit" value="send">
+            </form>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+
+    <script src="scripts/recommend.js" type="module"></script>
+
+    {{/inline}}
+{{/layouts/base}}

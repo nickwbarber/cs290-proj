@@ -46,7 +46,6 @@ main {
     align-items: center;
     -webkit-box-shadow: 8px 12px 70px 9px rgba(0,0,0,0.52); 
     box-shadow: 8px 12px 70px 9px rgba(0,0,0,0.52);
-    border: 3px dotted var(--accent-color);
 }
 
 .content .card:nth-child(odd) {

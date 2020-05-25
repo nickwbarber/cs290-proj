@@ -1,0 +1,99 @@
+{{#> layouts/base title="Thanks!"}}
+    {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/recommend.css"/>
+    {{/inline}}
+
+    {{#*inline "body-block"}}
+
+    <div class="body-container">
+        <header>
+            {{#> includes/navbar}}
+            {{/includes/navbar}}
+        </header>
+
+        <main>
+            <section class="intro">
+                <h1>Right on<span class="accent">.</span></h1>
+                <h2>Thanks for the recommendation!</h2>
+            </section>
+            <section class="poem-container">
+                <h3>Here, have a poem. This is "Jabberwocky" by Lewis Carroll.</h3>
+                <div class="scrollbox card">
+                    <div class="poem">
+                        <p>
+                        ’Twas brillig, and the slithy toves
+                        </br>
+                              &emsp;Did gyre and gimble in the wabe:
+                        </br>
+                        All mimsy were the borogoves,
+                        </br>
+                              &emsp;And the mome raths outgrabe.
+                        </p>
+                        <p>
+                        “Beware the Jabberwock, my son!
+                        </br>
+                              &emsp;The jaws that bite, the claws that catch!
+                        </br>
+                        Beware the Jubjub bird, and shun
+                        </br>
+                              &emsp;The frumious Bandersnatch!”
+                        </p>
+                        <p>
+                        He took his vorpal sword in hand;
+                        </br>
+                              &emsp;Long time the manxome foe he sought—
+                        </br>
+                        So rested he by the Tumtum tree
+                        </br>
+                              &emsp;And stood awhile in thought.
+                        </p>
+                        <p>
+                        And, as in uffish thought he stood,
+                        </br>
+                              &emsp;The Jabberwock, with eyes of flame,
+                        </br>
+                        Came whiffling through the tulgey wood,
+                        </br>
+                              &emsp;And burbled as it came!
+                        </p>
+                        <p>
+                        One, two! One, two! And through and through
+                        </br>
+                              &emsp;The vorpal blade went snicker-snack!
+                        </br>
+                        He left it dead, and with its head
+                        </br>
+                              &emsp;He went galumphing back.
+                        </p>
+                        <p>
+                        “And hast thou slain the Jabberwock?
+                        </br>
+                              &emsp;Come to my arms, my beamish boy!
+                        </br>
+                        O frabjous day! Callooh! Callay!”
+                        </br>
+                              &emsp;He chortled in his joy.
+                        </p>
+                        <p>
+                        ’Twas brillig, and the slithy toves
+                        </br>
+                              &emsp;Did gyre and gimble in the wabe:
+                        </br>
+                        All mimsy were the borogoves,
+                        </br>
+                              &emsp;And the mome raths outgrabe.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+
+    <script src="/scripts/recommend.js" type="module"></script>
+
+    {{/inline}}
+{{/layouts/base}}

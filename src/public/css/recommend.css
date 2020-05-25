@@ -1,0 +1,103 @@
+.body-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 25vh;
+    justify-items: center;
+    justify-content: center;
+}
+
+header {
+    grid-row: 1;
+    width: 100vw;
+    padding: 1em 2em;
+}
+
+main {
+    grid-row: 2;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.message-form {
+    display: flex;
+    width: 80vw;
+    margin: 5rem auto 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: start;
+    color: var(--light-text-color);
+}
+
+.message-form label {
+    padding-right: 1em;
+    display: none;
+}
+
+.message-form .btn {
+    width: 5em;
+    height: 2.4em;
+    text-align: center;
+    background: var(--light-bg-color);
+    color: var(--dark-text-color);
+    border-radius: 10px;
+    box-shadow: 8px 12px 70px 9px rgba(0,0,0,0.52);
+    /*border: 3px dotted var(--accent-color);*/
+    font-family: 'Voces', sans-serif;
+    font-size: 1rem;
+}
+
+.message-form .textarea {
+    width: 20vw;
+    background: transparent;
+    padding: 0.5rem;
+    border: none;
+    color: var(--light-text-color);
+    border-bottom: 2px solid var(--light-bg-color);
+    box-shadow: 8px 12px 70px 9px rgba(0,0,0,0.52);
+    font-size: 1rem;
+}
+
+h1 {
+    display: inline-block;
+    padding: 0.5em 0 0 0;
+    margin: 0;
+    font-family: 'Calistoga', serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.poem-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    text-align: left;
+    color: var(--dark-text-color);
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 1.3em;
+    display: grid;
+    background: var(--light-text-color);
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+    align-items: center;
+    -webkit-box-shadow: 8px 12px 70px 9px rgba(0,0,0,0.52); 
+    box-shadow: 8px 12px 70px 9px rgba(0,0,0,0.52);
+    border: 3px dotted var(--accent-color);
+    position: relative;
+}
+
+.poem {
+    left: 0;
+}
