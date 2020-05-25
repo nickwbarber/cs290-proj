@@ -5,6 +5,6 @@ const log = require('../log').log;
 
 function main(req, res) {
     res.status(200);
-    log(`/recommend visited"`);
+    log(`/recommend visited`);
     res.render('pages/recommend');
 }
